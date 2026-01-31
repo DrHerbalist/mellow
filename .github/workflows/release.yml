@@ -9,8 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    name: Build
+  release:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,15 +27,6 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
-
-  release:
-    name: Release
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
