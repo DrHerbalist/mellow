@@ -10,11 +10,11 @@ import java.io.FileWriter;
 
 public class RenderDistanceConfig {
 
-    public int startDistance = 4;
+    public int startDistance = 2;
     public int endDistance = 7;
     public int firstIncreaseDelaySeconds = 120;
-    public int stepDelaySeconds = 30;
-    public int stepSize = 1;
+    public int stepDelaySeconds = 60;
+    public int stepSize = 2;
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final File CONFIG_FILE =
