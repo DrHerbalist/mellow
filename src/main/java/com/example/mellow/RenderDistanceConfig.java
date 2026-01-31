@@ -11,7 +11,7 @@ import java.io.FileWriter;
 public class RenderDistanceConfig {
 
     public int startDistance = 2;
-    public int endDistance = 7;
+    public int endDistance = 6;
     public int firstIncreaseDelaySeconds = 120;
     public int stepDelaySeconds = 60;
     public int stepSize = 2;
